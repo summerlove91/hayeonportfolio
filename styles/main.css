@@ -1,0 +1,407 @@
+html{
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    
+    min-height: 100%;
+}
+
+
+.title {
+    
+    font-family: 'Faster One';
+    text-align: center;
+    margin-top:260px;
+    font-size: 90px;
+    color: #FB4264;
+    line-height: 9vw;
+    text-shadow: 0vw 0vw 3vw #F40A35; 
+    animation: title 1s ease infinite;
+    -webkit-animation: title 1s ease infinite;
+}
+
+/*
+@font-face{
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+*/
+
+@keyframes title{
+  0%,
+  100% {
+    text-shadow: 0vw 0vw 1vw #FA1C16, 0vw 0vw 3vw #FA1C16, 0vw 0vw 10vw #FA1C16, 0vw 0vw 10vw #FA1C16, 0vw 0vw .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0vw 0vw .5vw #800E0B, 0vw 0vw 1.5vw #800E0B, 0vw 0vw 5vw #800E0B, 0vw 0vw 5vw #800E0B, 0vw 0vw .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+nav {
+  position: fixed;
+  background-color: black;
+  opacity: 1.0;    
+  width: 1270px;
+  top: 0;
+  text-align: center;
+  z-index: 150;
+  min-height: 50px;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+/*  margin: 0;*/
+  padding: 0;
+  border: 0;
+  font-family: arial;
+  font-size: 20px;
+}
+
+.nav-link {
+  background-color: black;
+  font-family: 'Oswald';
+  padding: 0;
+  border: 0;
+  margin: 0;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.menu-bar {
+    position: inherit;
+    display: inline-block;
+    right: 0;
+    top: 0;
+}
+.home-banner-down-arrow {
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    z-index: 101;
+    align-content: center;
+/*    left: 600px;*/
+}
+
+.contact {
+    margin-left: 560px;
+    width: 270px;
+    display:inline-block;
+}
+
+.intro {
+
+/*    background: url(images/main001.png);*/
+/*    font-family: 'Pacifico';*/
+    z-index: 100;
+    position: relative; 
+    min-height: 450px; 
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 0;
+    padding: 0;
+    }
+
+.skills {
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    font-size: 20px;
+}
+
+.my-style-1{
+    font-family: 'Abril Fatface';
+    font-size: 100px;
+    left: 20px;
+}
+
+.my-style-2{
+    font-family: 'Adamina';
+    font-size: 30px;
+}
+
+.my-style-3 {
+    font-family: 'Bangers';
+    font-size: 50px;
+    right: 10px;
+}
+
+
+.my-style-4 {
+    font-family: 'Bangers';
+    font-size: 50px;
+    right: 10px;
+}
+
+
+.my-style-5 {
+    font-family: 'Adamina';
+    font-size: 30px;
+}
+
+.my-style-6 {
+    font-family: 'Bangers';
+    font-size: 50px;
+    right: 10px;
+}
+
+.my-style-textbox{
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+
+.my-style-all{
+    position: relative;
+    top: 60px;
+}
+
+.my-picture{
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    transition: all 1s ease-in;
+}
+
+.my-style-description-box{
+    background-color: black;
+    margin-bottom: 0;
+    border: 0;
+    padding: 0;
+    height: 700px;
+}
+
+.bodydescription{
+    font-family: 'Damion';
+    font-size: 50px;
+    text-align: center;
+    color: #426DFB;
+    text-shadow: 0vw 0vw 3vw #2356FF;
+}
+
+
+
+.projects {
+    background-color: black;
+    min-height: 350px;
+    color: azure;
+    font-size: 100px;
+    font-family: 'Merriweather Sans';
+    text-align: left;
+}   
+
+.col-lg-3 {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+} 
+
+.note-content{
+    cursor: pointer;
+    opacity:0;
+    transition: .5s ease;
+    background-color: white;
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.col-lg-3:hover .note-content{
+    opacity:1;
+}
+
+.text{
+    color: black;
+    font-size: 20px;
+    margin-top: 150px;
+    font-weight: bold;
+}
+
+
+.caseStudies{
+    background-color: black;
+    font-size: 20px;
+    min-height: 700px;
+}
+
+.case-intro{
+    text-align: center;
+    font-family: 'Bangers';
+    min-height: 250px;
+    position: relative;
+    top: 70px;
+    font-weight: bold;
+    font-size: 40px;
+    z-index: 10;
+    color: aliceblue;
+}
+
+.case-text{
+    cursor: pointer;
+    opacity:0;
+    transition: .5s ease;
+    background-color: white;
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+footer{
+    background-color: whitesmoke;
+    font-family: 'Bangers';
+    min-height: 200px;
+    color:darkred;
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer-text{
+    position: relative;
+    top: 50px;
+}
+
+
+.notelink{
+    position: relative;
+    height: 256px;
+    width: 341px;
+    vertical-align: baseline;
+    display: inline-block;
+}
+
+li{
+    display:inline-block;
+    padding: 8px 5px;
+    background-color: #313131;
+    color: azure;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: #222;
+    border-radius: 3px;
+    font-family: 'Arial';
+    font-size: .85em;
+    box-shadow: 1px 1px 0 rgba(0,0,0,.25);
+    margin: 3px;
+    opacity: 1;
+    cursor: pointer;
+    overflow: hidden;   
+}
+
+.padding-0 [class^="col"] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(/images/Preloader_1.gif) center no-repeat #fff;
+}
+
+ /* Medium and small screens (640px) */
+ @media (min-width: 640px) {
+    html { font-size: 112%; }
+ }
+ 
+ /* Large screens (1024px) */
+ @media (min-width: 1024px) {
+    html { font-size: 120%; }
+   /* Style information will go here */
+ }
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+    z-index:3;
+
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+}
