@@ -5,38 +5,35 @@
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Bevan|Shrikhand|Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Bevan|Shrikhand|Oswald|Rye|Suman|Sacramento" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/about.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="shortcut icon" href="images/favicon.ico" type="images/favicon.io">
         <link rel="icon" href="images/favicon.ico" type="images/favicon.io">
     </head>
     <body>
-
         <canvas id="snow"></canvas>
-        <nav class="navbar">
+        <nav class="navbar navbar-fixed-top">
             <div class="container-fluid text-center">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a class="nav-link" href="#section">HOME</a></li>
-                    <li><a class="nav-link" href="#section">ABOUT ME</a></li>
-                    <li><a class="nav-link" href="#section">RECENT WORKS</a></li>
+                    <li class="active"><a class="nav-link" href="main.html">HOME</a></li>
+                    <li><a class="nav-link" href="about.html">ABOUT ME</a></li>
+                    <li><a class="nav-link" href="">RECENT WORKS</a></li>
                     <li><a class="nav-link" href="#section">INTERESTS</a></li>
                 </ul>
             </div>
         </nav>
         
         <div class="jumbotron main-body">
-            <div class="container text-center">
+            <div class="container text-center main-text">
                 <h1 class="main-text-1">Full-stack Web Developer</h1>
                 <h2 class="main-text-2"> Hayeon Joo</h2>
             </div> 
             <div class = "skills">
                 <ul>
                     <li class="html5">
-                    <span>HTML5</span>
-                    </li>
-                    <li class="css">
-                    <span>CSS</span>
+                    <span>HTML5/CSS</span>
                     </li>
                     <li class="javascript">
                     <span>JAVASCRIPT</span>
@@ -55,34 +52,40 @@
                     </li>
                 </ul>
             </div>
-
         </div>
-    
-        <div class="row no-gutters my-picture" id="scrolldown">
+        
+        <div class="row no-gutters section main" id="scrolldown">
             <div class="col-lg-12 my-style-description-box">
                 <div class="my-style-textbox">
-                <div class="my-style-1">Hi there!</div>
-                <div class="my-style-all">
-                    <div class="my-style-2">I like creating websites that are... </div>
-                    <div class="my-style-3">user-friendly,</div>
-                    <div class="my-style-4">purpose driven,</div>
-                    <div class="my-style-5">and most importantly...</div>
-                    <div class="my-style-6">f.u.n. for your visitors to comeback!</div>
+                    <div class="my-style-all">
+                        <div class="my-style-1">Hi there!</div>
+                        <div class="my-style-2">
+                            I’m Full-stack Web Developer with
+                            <div class="my-style-21"> strong design skills. </br></div>
+                        </div>
+                        <div class="my-style-3">
+                            Beginning my career at a tech accelerator in Silicon Valley, I came across numerous technologies and entrepreneurs pursuing innovation. </br></div>
+                        <div class="my-style-4">
+                        There, I work to produce solutions to find new and better opportunities for excellence that customers will enjoy. 
+                        And with so many good vibes I received from startups, I decided to cross the border and become part of the tech industry that will work magic to change the world for better. </br></div>
+                        <div class="my-style-5">
+                        If your company shares the passion, and positivity of great work, please reach out to me! </div>
+                    </div>
                 </div>
             </div>
-            </div>
         </div>
-            <div class = "projects" id="scrolldown">
-                <div class="note-text-1">
-                <h3 class="projects-intro">
-                Check out my recent works
-                </h3></div>
-            </div>
-            <div class="row no-gutters projects-body">
-              <div class="col-lg-6 project-links">
-                <img src="images/bloccit-photo.png" height="400" width="639" alt="project-bloccit-pic" data-toggle="modal" data-target="#bloccitModal">
+        </section>
+        
+        <div class = "container-fluid projects" id="scrolldown">
+            <h3 class="projects-intro">
+                MY RECENT WORKS</h3>
+                <div class="project-dots">.....</div>
+            
+            <div class="row justify-content-end projects-body">
+              <div class="col-sm-6 project-links project-1">
+                <img src="images/bloccit-photo.png" height="300" width="500" alt="project-bloccit-pic" data-toggle="modal" data-target="#bloccitModal">
                 <div id="bloccitModal" class="modal fade" role="dialog">
-                    <div class="modal-dialog-lg">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title"> Bloccit</h4>
@@ -104,21 +107,112 @@
                             </div>  
                         </div>
                     </div>
-              </div>
-            </div>      
-              <div class="col-lg-6 project-links">
-                <img src="images/blocchat-photo.png" height="400" width="639" alt="project-blocchat-pic">
-              </div>
-            </div>
+                </div>
+                </div> 
             
+            
+            <div class="col-sm-6 project-links project-2">
+                <img src="images/blocchat-photo.png" height="300" width="500" alt="project-blocchat-pic" data-toggle="modal" data-target="#blocchatModal">
+                <div id="blocchatModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title"> Bloc Chat</h4>
+                                <div class="modal-body">
+                                    <div class="modal-content-description">
+                                    Bloc chat is a real-time chat application 
+                                    </div>
+                                    <div class="modal-content-title">Created with</div>
+                                    <div class="modal-content-description">
+                                    Angular JS, Firebase, Bootstrap for UI, cookies used to store information in the user’s web browser.
+                                    </div>
+                                    <div class="modal-content-title">User Stories</div>
+                                    <div class="modal-content-description">As a user, I want to see a list of available chat rooms. </br>As a user, I want to create chat rooms. </br> As a user, I want to see a list of messages in each chat room. </br> As a user, I want to set my username to display in chat rooms. </br>As a user, I want to send messages associated with my username in a chat room</div>
+                                </div>
+                                <div class="modal-footer">
+                                <button class="btn btn-lg btn-success" onclick="window.location.href='https://github.com/summerlove91/bloccit'">View on Github</button> 
+                                <button class="btn btn-lg btn-success" onclick="window.location.href='https://fathomless-garden-68387.herokuapp.com'">Play it on Heroku</button>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>  
+                </div>
+              </div>
+            </div> 
+            <div class="row justify-content-end projects-body">
+                <div class="col-sm-6 project-links project-3">
+                    <img src="images/codeoverflow.png" height="300" width="500" alt="project-codeoverflow-pic" data-toggle="modal" data-target="#codeoverflowModal">
+                    <div id="codeoverflowModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title"> Code Overflow</h4>
+                                <div class="modal-body">
+                                    <div class="modal-content-description">
+                                    Bloc chat is a real-time chat application 
+                                    </div>
+                                    <div class="modal-content-title">Created with</div>
+                                    <div class="modal-content-description">
+                                    Angular JS, Firebase, Bootstrap for UI, cookies used to store information in the user’s web browser.
+                                    </div>
+                                    <div class="modal-content-title">User Stories</div>
+                                    <div class="modal-content-description">As a user, I want to see a list of available chat rooms. </br>As a user, I want to create chat rooms. </br> As a user, I want to see a list of messages in each chat room. </br> As a user, I want to set my username to display in chat rooms. </br>As a user, I want to send messages associated with my username in a chat room</div>
+                                </div>
+                                <div class="modal-footer">
+                                <button class="btn btn-lg btn-success" onclick="window.location.href='https://github.com/summerlove91/bloccit'">View on Github</button> 
+                                <button class="btn btn-lg btn-success" onclick="window.location.href='https://fathomless-garden-68387.herokuapp.com'">Play it on Heroku</button>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>  
+                    </div>
+                </div>
+                <div class="col-sm-6 project-links project-4">
+                    <img src="images/bloc-jams2.jpg" height="300" width="500" alt="project-blocjams-pic" data-toggle="modal" data-target="#blocjamsModal">
+                    <div id="blocjamsModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title"> Code Overflow</h4>
+                                <div class="modal-body">
+                                    <div class="modal-content-description">
+                                    Bloc chat is a real-time chat application 
+                                    </div>
+                                    <div class="modal-content-title">Created with</div>
+                                    <div class="modal-content-description">
+                                    Angular JS, Firebase, Bootstrap for UI, cookies used to store information in the user’s web browser.
+                                    </div>
+                                    <div class="modal-content-title">User Stories</div>
+                                    <div class="modal-content-description">As a user, I want to see a list of available chat rooms. </br>As a user, I want to create chat rooms. </br> As a user, I want to see a list of messages in each chat room. </br> As a user, I want to set my username to display in chat rooms. </br>As a user, I want to send messages associated with my username in a chat room</div>
+                                </div>
+                                <div class="modal-footer">
+                                <button class="btn btn-lg btn-success" onclick="window.location.href='https://github.com/summerlove91/bloccit'">View on Github</button> 
+                                <button class="btn btn-lg btn-success" onclick="window.location.href='https://fathomless-garden-68387.herokuapp.com'">Play it on Heroku</button>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>  
+                    </div>
+                </div>
+            </div>
+        </div>    
 
         <footer class="footergroup">
             <div class= "footer-text">
-            <p> Thanks for visiting my website! For questions, email me at
-            <a href="mailto:gkdus3040@gmail.com">gkdus3040@gmail.com</a>
-            </p>
+                <p> INTERESTED IN WORKING WITH ME?</br></div></p>
+            <div class="footer-icons">
+                <span><a href="https://www.linkedin.com/in/hayeon-joo-80072799/"><img border="0" alt="linkedin-icon" src="images/linkedin-icon.png" width="50" height="50"></a></span>
+                <span><a href="mailto:gkdus3040@gmail.com?"><img border="0" alt="gmail-icon" src="images/gmail-icon.png" width="50" height="50"></a></span>
+                <span><a href="https://github.com/summerlove91"><img border="0" alt="github-icon" src="images/github-icon.png" width="50" height="50"></a></span>
             </div>
 
+            <div class="footer-bottom">
+            <span class="footer-copyright">
+            <p> Copyright</span> 
+            <span class="footer-signature">Hayeon Joo.</span> 
+            <span class="footer-copyright"> 2017</p></span>
+            </div>
+            
         </footer>
         <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

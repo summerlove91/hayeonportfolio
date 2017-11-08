@@ -17,20 +17,112 @@ body {
     z-index: 120;
 }
 
+.jumbotron{
+    margin-bottom: 0;
+}
+
 .main-body {
     border: 0;
-    background-image: url("../images/main-pic.png");
+    background-image: url("../images/main-pic3.png");
     background-size: 100%;
     background-repeat: no-repeat;
     margin:0;
     padding:0;
     width: 100%;
     z-index: 200;
-    height: 670px;
+    height: 730px;
+}
+
+.my-style-description-box {
+/*    margin: 50px;*/
+    overflow: hidden;
+    background-image: url("../images/my-pic.png");
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat; 
+    margin: 0;
+    border: 0;
+    padding: 0;
+    height: 700px;
+}
+
+
+.my-style-description-box{
+/*    background-color: gainsboro;*/
+/*    text-align: center;*/
+    
+}
+/*
+.my-style-image {
+    background-image: url("../images/my-pic.png");
+    background-size: 800px 60%;
+    background-repeat: no-repeat;
+    z-index: 5;
+    height: 600px;
+    padding: 0;
+    margin: 0;
+}
+*/
+
+.my-style-all {
+  font-family: 'Arbutus Slab', serif;
+  text-align: left;
+  padding-left: 40px;
+/*  width: 60%;*/
+  height: 200%;
+  color: black;
+  z-index: 120;
+}
+
+.my-style-all:before {
+  content: "";
+  background-color: lightgrey;
+  position: absolute;
+  opacity: 0.5;    
+  height: 200%;
+  width: 200%;
+  top: -10px;
+  left: -80%;
+  transform: rotate(65deg);
+  z-index: 10;
+}
+
+.my-style-1{
+    font-size: 80px;
+    left: 20px;
+}
+
+
+.my-style-2{
+  padding-top: 30px;
+  font-size: 25px;
+  padding-bottom: 15px;
+  width: 70%;
+}
+
+.my-style-3{
+  font-size: 25px;
+  padding-bottom: 20px;
+  width: 57%
+}
+
+.my-style-4{
+  padding-bottom: 20px;
+  font-size: 25px;
+  width: 65%;
+}
+
+.my-style-5{
+  font-size: 25px;
+  width: 70%;
+}
+
+.main-text {
+  top: 100px;
 }
 
 .main-text-1 {
-    font-family: 'Arbutus Slab', serif;
+  font-family: 'Arbutus Slab', serif;
 }
 
 .navbar {
@@ -55,102 +147,72 @@ body {
   font-weight: bold;
 }
 
-
 .home-banner-down-arrow {
-    margin-bottom: 15px;
-    text-align: center;
-    position: relative;
-    top: 300px;
-    z-index: 101;
-    align-content: center;
+  margin-bottom: 15px;
+  text-align: center;
+  position: relative;
+  top: 300px;
+  z-index: 101;
+  align-content: center;
 }
 
-.skills {
+.col-lg-6 {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+/*
+.ul {
     list-style: none;
-    margin-top: 130px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 750px;
-    font-size: 20px;
-    z-index: 150;
-}
-
-.my-style-1{
-    font-family: 'Abril Fatface';
-    font-size: 100px;
-    left: 20px;
-}
-
-.my-style-2{
-    font-family: 'Adamina';
-    font-size: 30px;
-}
-
-.my-style-3 {
-    font-family: 'Bangers';
-    font-size: 50px;
-    right: 10px;
-}
-
-
-.my-style-4 {
-    font-family: 'Bangers';
-    font-size: 50px;
-    right: 10px;
-}
-
-
-.my-style-5 {
-    font-family: 'Adamina';
-    font-size: 30px;
-}
-
-.my-style-6 {
-    font-family: 'Bangers';
-    font-size: 50px;
-    right: 10px;
-}
-
-.my-style-textbox{
-    position: relative;
-    left: 20px;
-    top: 50px;
-}
-
-.my-style-all{
-    position: relative;
-    top: 60px;
-}
-
-
-.my-style-description-box{
-    background-color: gainsboro;
     text-align: center;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    height: 600px;
+    width: 750px;
+    font-size: 25px;
+    z-index: 150; 
 }
+*/
 
-.note-text-1{
-    background-color: white;
-    color: black;
-}
 
 .projects {
     background-color: white;
-    min-height: 100px;
-    color: azure;
-    font-size: 100px;
+    min-height: 220px;
+    font-size: 20px;
     text-align: center;
+/*
     margin-bottom: 0;
     padding-bottom: 0;
+*/
 }  
+
+.project-dots {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: lightsteelblue;
+    padding-bottom: 60px;
+}
+
+.project-3.project-4{
+    margin-bottom: 40px;
+}
+
+.projects-intro{
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 120px;
+}
+
+.project-description{
+    color: black;
+}
 
 .projects-body {
     background-color: white;
-    margin-top: 0;
-    padding:0;
+    margin-bottom: 40px;
+}
+
+.modal-content {
+    color: black;
 }
 
 .text{
@@ -160,44 +222,11 @@ body {
     font-weight: bold;
 }
 
-
-.caseStudies{
-    background-color: black;
-    font-size: 20px;
-    min-height: 700px;
-}
-
-.case-intro{
-    text-align: center;
-    font-family: 'Bangers';
-    min-height: 250px;
-    position: relative;
-    top: 70px;
-    font-weight: bold;
-    font-size: 40px;
-    z-index: 10;
-    color: aliceblue;
-}
-
-.case-text{
-    cursor: pointer;
-    opacity:0;
-    transition: .5s ease;
-    background-color: white;
-    text-align: center;
-    z-index: 3;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
 footer{
-    background-color: whitesmoke;
-    font-family: 'Bangers';
-    min-height: 200px;
-    color:darkred;
+    background-color: lightsteelblue;
+    font-family: 'Oswald';
+    min-height: 400px;
+    color:black;
     font-size: 30px;
     text-align: center;
 }
@@ -205,27 +234,54 @@ footer{
 .footer-text{
     position: relative;
     top: 50px;
+    font-weight: bold;
 }
 
+.footer-icons {
+    top: 170px;
+    position: relative;
+}
 
-/*
-li{
+.footer-bottom{
+    display: inline-block;
+    position: relative;
+    top: 200px;
+}
+
+.footer-signature{
+    font-family: 'sacramento';
+    font-size: 28px;
+    padding: 9px;
+/*    top: 180px;*/
+/*    position: relative;*/
+    color: white;
+}
+
+.footer-copyright {
+/*    top: 180px;*/
+/*    position: relative;*/
+    font-size: 15px;
+}
+
+.skills {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.skills li {
     display:inline-block;
     padding: 8px 5px;
-    background-color: #313131;
+    background-color: grey;
     color: azure;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
+/*    border-width: 1px 1px 2px 1px;*/
     border-color: #222;
     border-radius: 3px;
-    font-size: .85em;
+    font-size: 15px;
     box-shadow: 1px 1px 0 rgba(0,0,0,.25);
-    margin: 3px;
     opacity: 1;
     cursor: pointer;
-    overflow: hidden;   
+    overflow: hidden;  
 }
-*/
 
 .padding-0 [class^="col"] {
     padding-right:0;
