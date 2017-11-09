@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Bevan|Shrikhand|Oswald|Rye|Suman|Sacramento" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Bevan|Shrikhand|Oswald|Rye|Suman|Sacramento|PT Serif|Cabin Sketch|Love Ya Like A Sister" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link rel="stylesheet" type="text/css" href="styles/about.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -18,9 +18,9 @@
             <div class="container-fluid text-center">
                 <ul class="nav navbar-nav">
                     <li class="active"><a class="nav-link" href="main.html">HOME</a></li>
-                    <li><a class="nav-link" href="about.html">ABOUT ME</a></li>
-                    <li><a class="nav-link" href="">RECENT WORKS</a></li>
-                    <li><a class="nav-link" href="#section">INTERESTS</a></li>
+                    <li><a class="nav-link" href="#scrolldown">ABOUT ME</a></li>
+                    <li><a class="nav-link" href="#scrollproject">RECENT WORKS</a></li>
+<!--                    <li><a class="nav-link" href="#section">INTERESTS</a></li>-->
                 </ul>
             </div>
         </nav>
@@ -39,7 +39,7 @@
                     <span>JAVASCRIPT</span>
                     </li>
                     <li class="jquery">
-                    <span>JQUERY</span>
+                    <span>jQUERY</span>
                     </li>
                     <li class="angular">
                     <span>ANGULAR</span>
@@ -48,10 +48,14 @@
                     <span>BOOTSTRAP</span>
                     </li>
                     <li class="ruby">
-                    <span>RUBY in RAILS</span>
+                    <span>RUBY on RAILS</span>
                     </li>
                 </ul>
             </div>
+            <div class="home-banner-down-arrow">
+ +            <a href="#scrolldown">
+ +            <img width="90" height="60" src="images/down-arrow.png" alt="down-arrow"></a>
+ +          </div>
         </div>
         
         <div class="row no-gutters section main" id="scrolldown">
@@ -61,22 +65,22 @@
                         <div class="my-style-1">Hi there!</div>
                         <div class="my-style-2">
                             I’m Full-stack Web Developer with
-                            <div class="my-style-21"> strong design skills. </br></div>
+                            <div class="my-style-21"></div> <span class="strong">STRONG </span> <span class="design-skills"> design skills. </span></br>
                         </div>
                         <div class="my-style-3">
                             Beginning my career at a tech accelerator in Silicon Valley, I came across numerous technologies and entrepreneurs pursuing innovation. </br></div>
                         <div class="my-style-4">
-                        There, I work to produce solutions to find new and better opportunities for excellence that customers will enjoy. 
-                        And with so many good vibes I received from startups, I decided to cross the border and become part of the tech industry that will work magic to change the world for better. </br></div>
+                            There, I work to produce solutions to find new and better opportunities for excellence that customers will enjoy. 
+                            And with so many good vibes I received from startups, I decided to cross the border and become part of the tech industry that will work magic to change the world for better. </br></div>
                         <div class="my-style-5">
-                        If your company shares the passion, and positivity of great work, please reach out to me! </div>
+                            If your company shares the passion, and positivity of great work, please reach out to me! </div>
                     </div>
                 </div>
             </div>
         </div>
         </section>
         
-        <div class = "container-fluid projects" id="scrolldown">
+        <div class = "container-fluid projects" id="scrollproject">
             <h3 class="projects-intro">
                 MY RECENT WORKS</h3>
                 <div class="project-dots">.....</div>
@@ -84,25 +88,38 @@
             <div class="row justify-content-end projects-body">
               <div class="col-sm-6 project-links project-1">
                 <img src="images/bloccit-photo.png" height="300" width="500" alt="project-bloccit-pic" data-toggle="modal" data-target="#bloccitModal">
+<!--
+                <div class="overlay">
+                    <div class="overlay-text">Ruby on Rails and Bootstrap</div>
+                </div>  
+-->
                 <div id="bloccitModal" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title"> Bloccit</h4>
+                                
                                 <div class="modal-body">
+                                    
+                                    <h4 class="modal-title"> Bloccit: Replica version of Reddit</h4>
+                                    <div class="modal-content-tech">
+                                    ♦ Ruby on Rails    ♦ Bootstrap for UI
+                                    </div>
                                     <div class="modal-content-description">
                                     Just like Reddit, Bloccit is an app where people can post, vote on, share and save links and comments. 
                                     </div>
-                                    <div class="modal-content-title">Created with</div>
-                                    <div class="modal-content-description">
-                                    Ruby on Rails, Bootstrap for UI
+<!--                                    <div class="modal-content-title">Created with</div>-->
+<!--                                    <div class="modal-content-title">Features</div>-->
+                                    <div class="modal-content-description">User stories</br>
+                                    - Create topics, posts and comments. </br>
+                                    - Favorite posts, and up/down vote any posts.</br> 
+                                    - User sign-in/out.</div>
+                                    <div class="modal-content-image">
+                                        <img src="images/bloccit-photo.png" height="500" width="800" alt="bloccit-screen">
                                     </div>
-                                    <div class="modal-content-title">Features</div>
-                                    <div class="modal-content-description">Create topics, posts and comments. Favorite posts, and up/down vote any posts. User sign-in/out.</div>
                                 </div>
                                 <div class="modal-footer">
-                                <button class="btn btn-lg btn-success" onclick="window.location.href='https://github.com/summerlove91/bloccit'">View on Github</button> 
-                                <button class="btn btn-lg btn-success" onclick="window.location.href='https://fathomless-garden-68387.herokuapp.com'">Play it on Heroku</button>
+                                <button class="btn btn-lg btn-basic center-block" onclick="window.location.href='https://github.com/summerlove91/bloccit'">View code on Github</button> 
+                                <button class="btn btn-lg btn-basic center-block" onclick="window.location.href='https://fathomless-garden-68387.herokuapp.com'">Play it on Heroku</button>
                                 </div>
                             </div>  
                         </div>
@@ -113,25 +130,36 @@
             
             <div class="col-sm-6 project-links project-2">
                 <img src="images/blocchat-photo.png" height="300" width="500" alt="project-blocchat-pic" data-toggle="modal" data-target="#blocchatModal">
+<!--
+                <div class="overlay">
+                    <div class="overlay-text">Angular, Bootstrap, and firebase  </div>
+                </div>
+-->
                 <div id="blocchatModal" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title"> Bloc Chat</h4>
+                                
                                 <div class="modal-body">
+                                    <h4 class="modal-title"> Bloc Chat</h4>
+                                    <div class="modal-content-tech">
+                                    ♦ Angular JS  ♦ Firebase ♦ Bootstrap for UI  ♦ Cookies to store information in the user’s web browser.
+                                    </div>
                                     <div class="modal-content-description">
                                     Bloc chat is a real-time chat application 
                                     </div>
-                                    <div class="modal-content-title">Created with</div>
                                     <div class="modal-content-description">
-                                    Angular JS, Firebase, Bootstrap for UI, cookies used to store information in the user’s web browser.
-                                    </div>
-                                    <div class="modal-content-title">User Stories</div>
-                                    <div class="modal-content-description">As a user, I want to see a list of available chat rooms. </br>As a user, I want to create chat rooms. </br> As a user, I want to see a list of messages in each chat room. </br> As a user, I want to set my username to display in chat rooms. </br>As a user, I want to send messages associated with my username in a chat room</div>
+                                    User Stories</br>
+                                    - As a user, I want to see a list of available chat rooms. </br>
+                                    - As a user, I want to create chat rooms. </br> 
+                                    - As a user, I want to see a list of messages in each chat room. </br> 
+                                    - As a user, I want to set my username to display in chat rooms. </br>
+                                    - As a user, I want to send messages associated with my username in a chat room</div>
+                                    <img src="images/blocchat-photo.png" height="500" width="800" alt="project-blocchat-pic">
                                 </div>
                                 <div class="modal-footer">
-                                <button class="btn btn-lg btn-success" onclick="window.location.href='https://github.com/summerlove91/bloccit'">View on Github</button> 
-                                <button class="btn btn-lg btn-success" onclick="window.location.href='https://fathomless-garden-68387.herokuapp.com'">Play it on Heroku</button>
+                                <button class="btn btn-lg btn-basic center-block" onclick="window.location.href='https://github.com/summerlove91/bloccit'">View code on Github</button> 
+                                <button class="btn btn-lg btn-basic center-block" onclick="window.location.href='https://fathomless-garden-68387.herokuapp.com'">Play it on Heroku</button>
                                 </div>
                             </div>  
                         </div>
@@ -142,25 +170,39 @@
             <div class="row justify-content-end projects-body">
                 <div class="col-sm-6 project-links project-3">
                     <img src="images/codeoverflow.png" height="300" width="500" alt="project-codeoverflow-pic" data-toggle="modal" data-target="#codeoverflowModal">
+<!--
+                    <div class="overlay">
+                        <div class="overlay-text">Ruby on Rails</div>
+                    </div>
+-->
                     <div id="codeoverflowModal" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title"> Code Overflow</h4>
                                 <div class="modal-body">
-                                    <div class="modal-content-description">
-                                    Bloc chat is a real-time chat application 
+                                    <h4 class="modal-title">Code Overflow: Replica of Stack Overflow</h4>
+                                    <div class="modal-content-tech">
+                                    ♦ Ruby on Rails ♦ Redcarpet markdown rendering gem ♦ Devise gem for authentication ♦ Pundit gem for authorization ♦ Faker gem ♦ Stripe gem to charge for premium users.
                                     </div>
-                                    <div class="modal-content-title">Created with</div>
                                     <div class="modal-content-description">
-                                    Angular JS, Firebase, Bootstrap for UI, cookies used to store information in the user’s web browser.
+                                    Code Overflow allows users to collaborate on community sourced posts.
                                     </div>
-                                    <div class="modal-content-title">User Stories</div>
-                                    <div class="modal-content-description">As a user, I want to see a list of available chat rooms. </br>As a user, I want to create chat rooms. </br> As a user, I want to see a list of messages in each chat room. </br> As a user, I want to set my username to display in chat rooms. </br>As a user, I want to send messages associated with my username in a chat room</div>
+                                    <div class="modal-content-description">
+                                    User Stories</br>
+                                    - As a user, I want to sign up for a free account by providing a user name, password and email.</br>
+                                    - As a user, I want to sign in and out of Code Overflow.</br>
+                                    - As a user with a standard account, I want to create, read, update, and delete public posts.</br>
+                                    - As a developer, I want to offer three user roles: admin, standard, or premium.	</br>
+                                    - As a developer, I want to seed the development database automatically with users and posts. </br>
+                                    - As a user, I want to upgrade my account from a free to a paid plan. </br>
+                                    - As a premium user, I want to create private posts.	</br>
+                                    - As a user, I want to edit wikis using Markdown syntax.	</br>
+                                    - As a premium user, I want to add and remove collaborators for my private posts. </div>
+                                    <img src="images/codeoverflow.png" height="500" width="800" alt="project-codeoverflow-pic">
                                 </div>
                                 <div class="modal-footer">
-                                <button class="btn btn-lg btn-success" onclick="window.location.href='https://github.com/summerlove91/bloccit'">View on Github</button> 
-                                <button class="btn btn-lg btn-success" onclick="window.location.href='https://fathomless-garden-68387.herokuapp.com'">Play it on Heroku</button>
+                                <button class="btn btn-lg btn-basic" onclick="window.location.href='https://github.com/summerlove91/coding-wiki'">View code on Github</button> 
+                                <button class="btn btn-lg btn-basic" onclick="window.location.href='https://fathomless-garden-68387.herokuapp.com'">Play it on Heroku</button>
                                 </div>
                             </div>  
                         </div>
@@ -169,26 +211,39 @@
                 </div>
                 <div class="col-sm-6 project-links project-4">
                     <img src="images/bloc-jams2.jpg" height="300" width="500" alt="project-blocjams-pic" data-toggle="modal" data-target="#blocjamsModal">
+<!--
+                    <div class="overlay">
+                        <div class="overlay-text">Angular and Javascript </div>
+                    </div>
+-->
                     <div id="blocjamsModal" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title"> Code Overflow</h4>
+    
                                 <div class="modal-body">
-                                    <div class="modal-content-description">
-                                    Bloc chat is a real-time chat application 
+                                    <h4 class="modal-title"> Blocjams</h4>
+                                    <div class="modal-content-tech">
+                                    ♦ Angular ♦ Javascript ♦ jQuery
                                     </div>
-                                    <div class="modal-content-title">Created with</div>
                                     <div class="modal-content-description">
-                                    Angular JS, Firebase, Bootstrap for UI, cookies used to store information in the user’s web browser.
+                                    Bloc Jams is my first front-end project, a music player web app with a splashy landing page, an album collection page, and an album page from which a user can play music and skip between songs. I was able to refactor my original Bloc Jams project into Angular. 
                                     </div>
-                                    <div class="modal-content-title">User Stories</div>
-                                    <div class="modal-content-description">As a user, I want to see a list of available chat rooms. </br>As a user, I want to create chat rooms. </br> As a user, I want to see a list of messages in each chat room. </br> As a user, I want to set my username to display in chat rooms. </br>As a user, I want to send messages associated with my username in a chat room</div>
+                                    <div class="modal-content-description">
+                                    User Stories </br>
+                                    - As a user, I want to see a list of available chat rooms. </br>
+                                    - As a user, I want to create chat rooms. </br>   
+                                    - As a user, I want to see a list of messages in each chat room. </br>
+                                    - As a user, I want to set my username to display in chat rooms. </br>
+                                    - As a user, I want to send messages associated with my username in a chat room</div>
+                                    <img src="images/bloc-jams2.jpg" height="500" width="800" alt="project-blocjams-pic">
                                 </div>
+<!--
                                 <div class="modal-footer">
-                                <button class="btn btn-lg btn-success" onclick="window.location.href='https://github.com/summerlove91/bloccit'">View on Github</button> 
-                                <button class="btn btn-lg btn-success" onclick="window.location.href='https://fathomless-garden-68387.herokuapp.com'">Play it on Heroku</button>
+                                <button class="btn btn-lg btn-basic" onclick="window.location.href='https://github.com/summerlove91/bloc-jams2'">View code on Github</button> 
+                                <button class="btn btn-lg btn-basic" onclick="window.location.href='https://fathomless-garden-68387.herokuapp.com'">Play it on Heroku</button>
                                 </div>
+-->
                             </div>  
                         </div>
                     </div>  
@@ -199,7 +254,7 @@
 
         <footer class="footergroup">
             <div class= "footer-text">
-                <p> INTERESTED IN WORKING WITH ME?</br></div></p>
+                <p> INTERESTED IN WORKING WITH ME? </br></div></p>
             <div class="footer-icons">
                 <span><a href="https://www.linkedin.com/in/hayeon-joo-80072799/"><img border="0" alt="linkedin-icon" src="images/linkedin-icon.png" width="50" height="50"></a></span>
                 <span><a href="mailto:gkdus3040@gmail.com?"><img border="0" alt="gmail-icon" src="images/gmail-icon.png" width="50" height="50"></a></span>
@@ -209,8 +264,8 @@
             <div class="footer-bottom">
             <span class="footer-copyright">
             <p> Copyright</span> 
-            <span class="footer-signature">Hayeon Joo.</span> 
-            <span class="footer-copyright"> 2017</p></span>
+            <span class="footer-signature">Hayeon Joo</span> 
+            <span class="footer-copyright"> 2017.</p></span>
             </div>
             
         </footer>
