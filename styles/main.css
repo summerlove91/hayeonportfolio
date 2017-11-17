@@ -24,7 +24,7 @@ body {
 
 .main-body {
     border: 0;
-    background-image: url("../images/main-pic3.png");
+    background-image: url("../images/main-pic3-1.png");
     background-size: 100%;
 /*    background-repeat: no-repeat;*/
     margin:0;
@@ -52,7 +52,7 @@ body {
 .my-style-description-box {
 /*    margin: 50px;*/
     overflow: hidden;
-    background-image: url("../images/my-pic.png");
+    background-image: url("../images/my-pic-1.png");
     background-size: 50%;
     background-position: right;
     background-repeat: no-repeat; 
