@@ -24,27 +24,26 @@ body {
 
 .main-body {
     border: 0;
-    background-image: url("../images/main-pic3-1.png");
-    background-size: 100%;
-/*    background-repeat: no-repeat;*/
+    background-image: url("../images/main-pic3-2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin:0;
     padding:0;
-    width: 100%;
     z-index: 200;
     height: 700px;
 }
 
-.main-text {
-  top: 100px;
-}
 
 .main-text-1 {
-  font-family: 'Arbutus Slab', serif;
+    margin-top: 70px;
+    font-family: 'Arbutus Slab', serif;
+    font-size: 5vw;
 }
 
 .main-text-2 {
     font-family: 'Sacramento';
-    font-size: 5vw;
+    font-size: 4vw;
     color: white;
     padding-bottom: 20px;
 }
@@ -136,25 +135,36 @@ body {
 }
 
 .navbar {
-/*  position: fixed;*/
   background-color: white;
-  opacity: 1.0;       
-/*  top: 0;*/
-  z-index: 150;
-  height: 50px;
-  overflow: hidden;
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-  border: 0px;
+  width: 100%;
+  display: inline-flex;
+
+/*  opacity: 1.0;       */
+/*  z-index: 150;*/
+/*  height: 50px;*/
+/*  left: 50%;*/
+/*  overflow: hidden;*/
+/*  display: inline-block;*/
+/*  margin: auto;*/
+/*  text-align: center;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  border: 0px;*/
+}
+
+.nav .navbar-nav {
+/*    text-align: center;*/
+/*    display: inline-block;*/
+/*    left: 50%;*/
 }
 
 .nav-link {
   font-family: 'Oswald';
-  font-size: 20px;
+  font-size: 2vw;
   color: black;
   font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .modal-footer{
@@ -163,14 +173,12 @@ body {
 }
 
 .home-banner-down-arrow {
-  position: absolute;
-
+  position: relative;
   left: 45%;
-  padding: auto;
   display: block;
-  bottom: 10%;
   z-index: 101;
-  align-content: center;
+  top: 42%;
+/*  align-content: center;*/
 }
 
 .col-lg-6 {
@@ -329,7 +337,7 @@ footer{
     color: azure;
     border-color: #222;
     border-radius: 3px;
-    font-size: 15px;
+    font-size: 1.5vw;
     box-shadow: 1px 1px 0 rgba(0,0,0,.25);
     opacity: 1;
     cursor: pointer;
@@ -340,6 +348,26 @@ footer{
     padding-right:0;
     padding-left:0;
 }
+
+
+@media only screen and (min-width:500px) and (max-width:800px){
+    .main-body {height: 500px; }
+    .home-banner-down-arrow {top: 35%;}
+    .nav-link {font-size: 2.5vw}
+}
+
+@media only screen and (min-width:801px) and (max-width:970px){
+    .main-body {height: 580px; }
+    .home-banner-down-arrow {top: 35%; width: 50%;}
+    .nav-link {font-size: 2.5vw}
+}
+
+@media only screen and (min-width: 350px) and (max-width:499px){
+    .nav-link {font-size: 3.5vw}
+    .main-body {height: 330px;}
+    .home-banner-down-arrow {top: 22%}
+}
+
 
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
@@ -353,25 +381,6 @@ footer{
 	z-index: 9999;
 	background: url(/images/Preloader_1.gif) center no-repeat #fff;
 }
-
- /* Medium and small screens (640px) */
- @media (min-width: 640px) {
-   
-     }
- }
- 
-
-
-@media (max-width: 887px) {
-    .my-style-1{font-size: 70%; }
-    
-}
- /* Large screens (1024px) */
- @media (max-width: 1067px) {
-     .main-body{height:130%; }
-   /* Style information will go here */
- }
-
 
 #snow{
 	background: none;
