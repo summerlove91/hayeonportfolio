@@ -1,3 +1,12 @@
+//$(document).ready(function(){
+//    $(".project-links").hover(function(){
+//        $(this).addClass("animated zoomIn");
+//    })
+//    
+//});
+//                  
+
+
 //
 //$(window).load(function() {
 //		// Animate loader off screen
