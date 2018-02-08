@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Hayeon Joo</title>
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Bevan|Shrikhand|Oswald|Rye|Roboto|Mukta+Mahee|PT Serif|Cabin Sketch|Love Ya Like A Sister|Sedgwick+Ave|Sacramento" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/note.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="nav navbar-nav">
+                    <span><a class="nav-link" href="index.html">HOME</a></span>
+                    <span><a class="nav-link" href="#aboutme">ABOUT ME</a></span>
+                    <span><a class="nav-link" href="#recentworks">RECENT WORKS</a></span>
+                    <span><a class="nav-link" href="#usefulnotes">USEFUL NOTES</a></span>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid notes-header">
+            <div class="note-title">
+                 Creating slated divs with CSS
+            </div>
+            <div class="note-date">
+            By Hayeon Joo on 9 Jan 2017
+            </div>
+        </div>
+        
+        <div class="note-body">
+            <div class="note-content">
+                <div class="note-content-1">
+                To make slanted or diagonal div with css properties, it is important to understand layering techniques and how the css transform property changes the angling of the container. </div>
+                <div class="note-content-1">
+                First, here are two divs in pink and blue. </br></div>
+                <img src="images/note-1-1.png" alt="note-1-1" class="note-1 center-block">
+                <img src="images/note-1-2.png" alt="note-1-2" class="note-1 center-block">
+                <div class="note-content-1">
+                We can skew the div by some angle using the transform property with skewY which will rotate block by y axis. Remember that transform property will only work for targets that are positioned absolute, relative or fixed. And this will rotate the div like this.
+                </div>
+                <img src="images/note-1-3.png" alt="note-1-1" class="note-1 center-block">
+                <img src="images/note-1-4.png" alt="note-1-1" class="note-1 center-block">
+                <div class="note-content-1">
+                Here, the whole div has been skewed by some angle but there are white empty gaps between the divs. Simply increasing the height of the div will make div taller without removing the gap.</div>
+                <div class="note-content-1">
+                To fix this, we can play around with negative margins. By adding margin-bottom property to negative pixels, this will create additional room in the bottom. 
+                </div>
+                <img src="images/note-1-5.png" alt="note-1-1" class="note-1 center-block">
+                <img src="images/note-1-6.png" alt="note-1-1" class="note-1 center-block">
+                <div class="note-content-1">
+                And along with the div, the text inside the div has also been skewed. To fix this, we can balance the block by adding opposite angle to the text css. This time, since the div is in -5 deg, we can transform the text by 5 deg. 
+                </div>
+                <img src="images/note-1-7.png" alt="note-1-1" class="note-1 center-block">
+                <div class="note-content-1 note-1-last">
+                Perfect! 
+                </div>
+            </div>
+                <div class="note-footer">
+                <a href="index.html">
+                    <div class="next-button">
+                        End of the note. </br>Let's go back to main page
+                </div></a>   
+                <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                </div>
+        </div>
+        <footer class="footergroup">
+            <div class= "footer-text">
+                <p> INTERESTED IN WORKING WITH ME? </br></div><div class="footer-dots">.....</div></p>
+            <div class="footer-icons">
+                <span><a href="https://www.linkedin.com/in/hayeon-joo-80072799/"><img border="0" alt="linkedin-icon" src="images/linkedin-icon.png" width="50" height="50"></a></span>
+                <span><a href="mailto:gkdus3040@gmail.com?"><img border="0" alt="gmail-icon" src="images/gmail-icon.png" width="50" height="50"></a></span>
+                <span><a href="https://github.com/summerlove91"><img border="0" alt="github-icon" src="images/github-icon.png" width="50" height="50"></a></span>
+            </div>
+
+            <div class="footer-bottom">
+            <span class="footer-copyright">
+            <p> Copyright</span> 
+            <span class="footer-signature">Hayeon Joo</span> 
+            <span class="footer-copyright"> 2017.</p></span>
+            </div>
+            
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified CSS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="scripts/jquery.waypoints.min.js"></script>
+    </body>
+</html>

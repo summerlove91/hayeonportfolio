@@ -1,0 +1,64 @@
+.notes-header {
+    background-image: url("../images/note-1-background.png");
+    background-size : contain;
+/*    background-attachment: fixed;*/
+    background-position: center;
+    background-repeat:no-repeat;
+    height: 340px;
+    font-family: 'Arbutus Slab', serif;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.note-title {
+    padding-top: 86px;
+    font-weight: bold;
+}
+
+.note-date {
+    font-family: 'Arbutus Slab', serif;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.note-content {
+    margin-top: 80px;
+    margin-right: 150px;
+    margin-left: 150px;
+    font-size: 30px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.note-content-1 {
+    padding-bottom: 30px;
+}
+
+.note-1 {
+    height: 70%;
+    width: 70%;
+    padding-bottom: 40px;
+}
+
+.note-1-last {
+    margin-bottom: 70px;
+}
+
+
+.next-button {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+
+.note-footer {
+    border-bottom: 3px dotted black;
+    margin-bottom: 90px;
+    text-align: right;
+    margin-left: 20px;
+    margin-right: 20px;
+}

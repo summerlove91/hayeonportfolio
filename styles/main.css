@@ -26,6 +26,7 @@ body {
     border: 0;
     background-image: url("../images/main-pic3-2.png");
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     margin:0;
@@ -49,9 +50,9 @@ body {
 }
 
 .my-style-description-box {
-/*    margin: 50px;*/
     overflow: hidden;
     background-image: url("../images/my-pic-1.png");
+    background-attachment: fixed;
     background-size: 50%;
     background-position: right;
     background-repeat: no-repeat; 
@@ -66,7 +67,7 @@ body {
   font-family: 'Arbutus Slab', serif;
   text-align: left;
   padding-left: 40px;
-/*  height: 200%;*/
+  margin-bottom: 50px;
   color: black;
   z-index: 120;
 }
@@ -153,7 +154,7 @@ body {
 }
 
 .nav .navbar-nav {
-/*    text-align: center;*/
+    text-align: center;
 /*    display: inline-block;*/
 /*    left: 50%;*/
 }
@@ -198,7 +199,7 @@ body {
     font-family: sans-serif;
     font-size: 40px;
     color: lightsteelblue;
-    padding-bottom: 60px;
+    padding-bottom: 45px;
 }
 
 .project-3.project-4{
@@ -209,7 +210,7 @@ body {
     font-family: 'Oswald';
     font-size: 30px;
     font-weight: bold;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .project-description{
@@ -261,6 +262,7 @@ body {
     width: 500px;
 }
 
+/*
 .overlay-text{
     color: black;
     font-size: 20px;
@@ -270,6 +272,7 @@ body {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+*/
 
 .modal-body{
     text-align: left;
@@ -296,9 +299,6 @@ body {
     padding-bottom: 25px;
 }
 
-.project-modal-img {
-    
-}
 
 .text{
     color: black;
@@ -307,6 +307,56 @@ body {
     font-weight: bold;
 }
 
+hr {
+    width: 100%;
+    color: #C0C0C0;
+}
+
+.useful-notes {
+    height: 400px;
+    background-color: white;
+}
+
+.useful-notes-title {
+    font-family: 'Arbutus Slab', serif;
+    font-size: 35px;
+    display: inline-block;
+}
+
+.useful-notes-box {
+    margin-left: 30px;
+    border-bottom: 4px dotted grey;
+    padding: 15px;
+    margin-bottom: 100px;
+}
+
+
+.read-button {
+	width: 15vw;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    border: 3px solid gray;
+    background-color: white;
+    padding: 12px 30px;
+    display: inline-block;
+    float: right;
+    transition-duration: 0.5s;
+}
+
+.read-button:hover {
+    background-color: lightgray;
+    border-color: lightgray;
+    font-size: 20px;
+}
+
+.useful-notes-date {
+    font-family: 'Arbutus Slab', serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    padding-left: 170px;
+}
 
 footer{
     background-color: lightsteelblue;
