@@ -35,6 +35,13 @@ body {
     height: 700px;
 }
 
+.main-body:after{
+    background-image : linear-gradient(to bottom, 
+                    rgba(255,255,255, 0), 
+                    rgba(255,255,255, 1) 100%);
+    width    : 100%;
+    height   : 4em;
+}
 
 .main-text-1 {
     margin-top: 70px;
@@ -319,7 +326,7 @@ hr {
 
 .useful-notes-title {
     font-family: 'Arbutus Slab', serif;
-    font-size: 35px;
+    font-size: 3.5vw;
     display: inline-block;
 }
 
@@ -340,7 +347,7 @@ hr {
     background-color: white;
     padding: 12px 30px;
     display: inline-block;
-    float: right;
+    position: relative;
     transition-duration: 0.5s;
 }
 
@@ -352,10 +359,11 @@ hr {
 
 .useful-notes-date {
     font-family: 'Arbutus Slab', serif;
-    font-size: 20px;
+    font-size: 1.9vw;
     padding-bottom: 20px;
     display: inline-block;
-    padding-left: 170px;
+    padding-left: 7vw;
+    padding-right: 2vw;
 }
 
 footer{
@@ -418,6 +426,56 @@ footer{
     opacity: 1;
     cursor: pointer;
     overflow: hidden;  
+    
+    
+}
+
+.html5{
+    animation-duration: 2s;
+    animation-delay: 0.5s; 
+    animation-iteration-count: infinite;
+}
+
+
+.javascript{
+    animation-duration: 2s;
+    animation-delay: 0.7s; 
+    animation-iteration-count: infinite;
+}
+
+.jquery{
+    animation-duration: 2s;
+    animation-delay: 0.9s; 
+    animation-iteration-count: infinite;
+}
+
+.angularjs {
+    animation-duration: 2s;
+    animation-delay: 1.1s; 
+    animation-iteration-count: infinite;
+}
+
+.angular {
+    animation-duration: 2s;
+    animation-delay: 1.3s; 
+    animation-iteration-count: infinite;
+}
+
+.bootstrap {
+    animation-duration: 2s;
+    animation-delay: 1.5s; 
+    animation-iteration-count: infinite;
+}
+
+.ruby {
+    animation-duration: 2s;
+    animation-delay: 1.7s; 
+    animation-iteration-count: infinite;
+}
+
+.skill:hover {
+    color:red;
+    animation: all 2s;
 }
 
 .padding-0 [class^="col"] {
