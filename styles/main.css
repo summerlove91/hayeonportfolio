@@ -249,6 +249,26 @@ body {
   -ms-transition-duration: 500ms;
   -ms-transition-timing-function: ease-out;
 }
+
+.project-mouseover{
+    opacity: 0.85;
+    width: 64%;
+    height: 64%;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    text-shadow: 0.7px 0.7px black;
+    border: 2.7px solid white;
+    position: absolute;
+    left: 18%;
+    font-family: 'Arbutus Slab', serif;
+    top: 55px;
+    text-align: center;
+    padding: 5vw;
+    background: rgba(154,151,151,0.7)
+}
+
+
 /*
 .overlay {
     position: absolute;
