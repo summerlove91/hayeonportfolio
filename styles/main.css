@@ -8,6 +8,31 @@ body {
     width: 100%;
 }
 
+.navbar {
+  background-color: rgba(0,0,0, 0);
+  width: 100%;
+  display: inline-flex;
+  
+}
+
+.nav .navbar-nav {
+  text-align: center;
+}
+
+.navbar-nav{
+    margin-top: 10px !important;
+}
+
+.nav-link {
+  font-family: 'Oswald';
+  font-size: 2vw;
+  color: black;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
 .jumbotron {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
@@ -47,6 +72,7 @@ body {
     margin-top: 70px;
     font-family: 'Arbutus Slab', serif;
     font-size: 5vw;
+    
 }
 
 .main-text-2 {
@@ -56,9 +82,17 @@ body {
     padding-bottom: 20px;
 }
 
+.home-banner-down-arrow {
+  position: relative;
+  left: 45%;
+  display: block;
+  z-index: 101;
+  top: 42%;
+}
+
 .my-style-description-box {
     overflow: hidden;
-    background-image: url("../images/my-pic-1.png");
+/*    background-image: url("../images/my-pic-1.png");*/
     background-attachment: fixed;
     background-size: 50%;
     background-position: right;
@@ -66,54 +100,54 @@ body {
     margin: 0;
     border: 0;
     padding: 0;
-    height: 100%;
+    height: 140%;
     z-index:100;
+    background-color: whitesmoke;
+}
+
+.my-style-intro{
+  padding-top: 30px;
+  border-top: 4px dotted grey;
+  font-family: 'Arbutus Slab', serif;
+  margin-top: 60px;
+  font-size: 3.6vw;
+  text-align: left;
+  padding-left: 40px;
+  margin-bottom: 50px;
+  color: #404040;
+  z-index: 120;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.mypic{
+    display: block;
+    position: relative;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .my-style-all {
   font-family: 'Arbutus Slab', serif;
-  text-align: left;
   padding-left: 40px;
-  margin-bottom: 50px;
-  color: black;
+  color: #404040;
   z-index: 120;
-}
-
-.design-skills{
-  font-family: 'Cabin Sketch';
-  font-size: 3vw;
-}
-
-.strong {
-  font-family: 'Love Ya Like A Sister';
-  font-size: 3vw;
-  font-weight: bold;
-}
-
-.please-reachout{
-  font-family: 'Sedgwick Ave';
-  font-size: 2.9vw;
-  font-weight: bold;
-  padding-bottom: 30px;
-}
-
-.my-style-all:before {
-  content: "";
-  background-color: lightgrey;
-  position: absolute;
-  opacity: 0.5;    
-  height: 200%;
-  width: 200%;
-  top: -10px;
-  left: -80%;
-  transform: rotate(65deg);
-  z-index: 10;
+  display: inline-block;
+  position: relative;
+  margin-top: 50px;
+  border-bottom: 4px dotted grey;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 60px;
 }
 
 .my-style-1{
     font-size: 7vw;
     left: 20px;
-    padding-top: 30px;
+    border-top: 4px dotted grey;
+    margin-top: 100px;
+    padding-top:40px;
 }
 
 
@@ -121,73 +155,32 @@ body {
   padding-top: 15px;
   font-size: 2.2vw;
   padding-bottom: 18px;
-  width: 75%;
 }
 
 .my-style-3{
   font-size: 2.1vw;
   padding-bottom: 18px;
-  width: 72%
+  margin-top: 30px;
 }
 
 .my-style-4{
   padding-bottom: 18px;
   font-size: 2vw;
-  width: 65%;
+/*  width: 65%;*/
 }
 
 .my-style-5{
-  font-size: 2.2vw;
-  width: 70%; 
-  padding-bottom: 15px;
-}
-
-.navbar {
-  background-color: white;
-  width: 100%;
-  display: inline-flex;
-
-/*  opacity: 1.0;       */
-/*  z-index: 150;*/
-/*  height: 50px;*/
-/*  left: 50%;*/
-/*  overflow: hidden;*/
-/*  display: inline-block;*/
-/*  margin: auto;*/
-/*  text-align: center;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  border: 0px;*/
-}
-
-.nav .navbar-nav {
-    text-align: center;
-/*    display: inline-block;*/
-/*    left: 50%;*/
-}
-
-.nav-link {
-  font-family: 'Oswald';
   font-size: 2vw;
-  color: black;
-  font-weight: bold;
-  padding-left: 10px;
-  padding-right: 10px;
+  width: 70%; 
+  margin-bottom: 50px;
 }
+
 
 .modal-footer{
   display: inline-flex;
   position: relative;
 }
 
-.home-banner-down-arrow {
-  position: relative;
-  left: 45%;
-  display: block;
-  z-index: 101;
-  top: 42%;
-/*  align-content: center;*/
-}
 
 .col-lg-6 {
   margin-left: 0;
@@ -268,38 +261,10 @@ body {
     background: rgba(154,151,151,0.7)
 }
 
-
-/*
-.overlay {
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 500px;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: lightgray;
-}
-*/
-
 .project-links:hover .overlay{
     opacity: 0.7;
     width: 500px;
 }
-
-/*
-.overlay-text{
-    color: black;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-*/
 
 .modal-body{
     text-align: left;
@@ -356,7 +321,6 @@ hr {
     padding: 15px;
     margin-bottom: 100px;
 }
-
 
 .read-button {
 	width: 15vw;
