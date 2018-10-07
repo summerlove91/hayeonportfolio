@@ -12,7 +12,6 @@ body {
   background-color: rgba(0,0,0, 0);
   width: 100%;
   display: inline-flex;
-  
 }
 
 .nav .navbar-nav {
@@ -116,8 +115,8 @@ body {
   margin-bottom: 50px;
   color: #404040;
   z-index: 120;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .mypic{
@@ -149,7 +148,6 @@ body {
     margin-top: 100px;
     padding-top:40px;
 }
-
 
 .my-style-2{
   padding-top: 15px;
@@ -208,7 +206,7 @@ body {
 
 .projects-intro{
     font-family: 'Oswald';
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: bold;
     margin-top: 80px;
 }
@@ -325,11 +323,11 @@ hr {
 .read-button {
 	width: 15vw;
     text-align: center;
-    font-size: 17px;
+    font-size: 1.8vw;
     font-weight: bold;
-    border: 3px solid gray;
+    border: 0.3vw solid gray;
     background-color: white;
-    padding: 12px 30px;
+    padding: 0.5vw 1vw;
     display: inline-block;
     position: relative;
     transition-duration: 0.5s;
@@ -353,9 +351,9 @@ hr {
 footer{
     background-color: lightsteelblue;
     font-family: 'Oswald';
-    min-height: 400px;
+    min-height: 450px;
     color:black;
-    font-size: 30px;
+    font-size: 3vw;
     text-align: center;
 }
 
@@ -484,6 +482,11 @@ footer{
     .nav-link {font-size: 3.5vw}
     .main-body {height: 330px;}
     .home-banner-down-arrow {top: 22%}
+}
+
+@media only screen and (max-width:349px){
+    .navbar{ width: 70%;};
+    .my-style-all{ font-size: 4vw}
 }
 
 
