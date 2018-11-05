@@ -55,9 +55,9 @@ body {
 
 
 .main-text-1 {
-    margin-top: 30vh;
+    margin-top: 12vh;
     font-family: 'Arbutus Slab', serif;
-    font-size: 6vw;
+    font-size: 5vw;
 }
 
 .main-text-2 {
@@ -470,12 +470,16 @@ footer{
     .skills{ display:none}
     .main-text-1{ font-size: 2.7em}
     .main-text-2{ font-size: 2.2em}
-    .my-style-intro {font-size: 2em}
-    .my-style-all { margin:0;}
+    .my-style-intro {font-size: 1.7em}
+    .my-style-all { font-size: 1em; margin:0;}
     .my-style-3 {font-size: 1.3em}
     .my-style-4 {font-size: 1.3em}
     .my-style-5 {font-size: 1.3em}
-    .projects-intro { font-size: 1.4em; margin:10vh}
+    .projects-intro { font-size: 1.4em; margin:7vh}
+    .useful-notes-title {font-size: 1.6em}
+    .useful-notes-date {font-size: 1.1em }
+    .read-button{ font-size: 1em}
+    .footer-text { font-size: 1.9em}
 }
 
 @media only screen and (max-width:349px){
@@ -485,12 +489,16 @@ footer{
     .main-text-1{ font-size: 2.7em}
     .main-text-2{ font-size: 2.2em}
     .my-style-all { margin:0;}
+    .my-style-intro { font-size:1.7em}
     .my-style-3 {font-size: 1.3em}
     .my-style-4 {font-size: 1.3em}
     .my-style-5 {font-size: 1.3em}
     .projects-intro { font-size: 1.4em; margin-top: 7vh}
+    .useful-notes-title {font-size: 1.6em}
+    .useful-notes-date {font-size: 1.1em }
+    .read-button{ font-size: 1em}
+    .footer-text { font-size: 1.9em}
 }
-
 
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
